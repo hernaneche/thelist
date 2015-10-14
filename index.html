@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+     <!--
+
+                                The List
+
+                          Finitude in your face
+
+                     Based on G.W. Leibniz ideas from
+                "De l'Horizon de la Doctrine Humaine" (1693)
+
+                Copyright 2014
+
+
+             27086663139725297139551116314403586124412942223045241
+       -->
+
+        <meta name="description" content="This list has anything, does it has everything?. All the data conected with all the numbers. Texts, images, sounds, programs, files, etc.. [ any data ↔ any number ]. Warning : This site contains more stuff than the Internet itself, so unknown-dangerous-harmful-lethal-strange and totally unexpected things can arise here, use it with extreme care at your own responsibility." />
+        <meta name="keywords" content="everything, tloe, numbers, combinations, perfect hash, download, universe, Leibniz, Kurt Gödel, Georg Cantor, Leopold Kronecker,Jorge Luis Borges, Roman Opałka, The Matrix Movie">
+        <meta name="author" content="27086663139725297139551116314403586124412942223045241">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="shortcut icon" href="img/favicon.ico"/>        
+        <link href="css/theliststyle.css" rel="stylesheet" type="text/css">       
+        <link rel="stylesheet" type="text/css" href="css/sprite-duendes.css">         
+        <link rel="stylesheet" type="text/css" href="css/togglestyle.css">       
+        <!--<link rel="prefetch" href="../img/sprite_duende_uno.png"/>
+        <link rel="prefetch" href="../img/sprite_duende_dos.png"/>
+        <link rel="prefetch" href="../img/sprite_duende_tres.png"/>-->
+
+        <script type="application/javascript" src="js/filesaver.min.js"></script> 
+        <script type="application/javascript" src="js/thelist.min.js"></script>
+        <!-- twitter share
+        <script type="application/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        -->
+        <script>
+
+            //--popup code
+            /*var staticOpacity=false;*/
+            function togglePop(obj, close) {
+                //staticOpacity=!staticOpacity;                    
+                var isVisibleMustClose = (obj.style.display === 'block') || close;
+                obj.style.display = isVisibleMustClose ? 'none' : 'block';
+                return !isVisibleMustClose;
+
+            }
+
+            function clickShare() {
+                var linkToCopy = document.getElementById("linkToCopy");
+                var sharePop = document.getElementById("sharePop");
+                var inp = document.getElementById("txtIn");
+                var result = document.getElementById("result");
+                var choosen = getChoosenSystem();
+                var fromfile = fileMode;
+                var url;
+                var guess = document.getElementById('withGuess').checked;
+                var dl = document.getElementById('withDl').checked;
+                if (document.getElementById('chooseButton').checked) {
+                    /*modo data2number*/
+                    url = "http://www.thelistofeverything.com/?id=" + result.innerHTML; /*get number from result*/
+                    guess = guess || fromfile; /*guess if came from file*/
+                    document.getElementById('withGuess').checked = guess;
+                } else {
+                    /*modo number2data*/
+                    url = "http://www.thelistofeverything.com/?id=" + inp.value; /*get number from input*/
+                    guess = guess || document.getElementById("parseEnable").checked; /*guess if user was guessing*/
+                    document.getElementById('withGuess').checked = guess;
+                }
+
+                var optionsForTw = "%26guess=" + guess + "%26sys=" + choosen + "%26dl=" + dl;
+                var optionsForLink = "&guess=" + guess + "&sys=" + choosen + "&dl=" + dl;
+
+                //alert(url);
+                var twLink = "";
+                /*
+                 if (url.length < MAX_URL_LENGTH) {
+                 link = "<a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-text=\"It's also in the list\" data-url=\"" + url + "\" data-size=\"large\">Tweet</a>";
+                 }
+                 */
+
+                twLink = "https://twitter.com/intent/tweet?text=It's also in the list&url=" + url + optionsForTw + "&hashtags=thelistofeverything";
+
+                linkToCopy.value = url + optionsForLink;
+                document.getElementById("shareTwitt").href = twLink;
+                document.getElementById("go").href = url + optionsForLink;
+
+                if (togglePop(sharePop)) {
+                    //linkToCopy.innerHTML='http:/\/\www.google.com.ar';
+                    //linkToCopy.focus();
+                    linkToCopy.select();
+                }
+                return false;
+            }
+
+            function closeShare() {
+                var sharePop = document.getElementById("sharePop");
+                togglePop(sharePop, true);
+                return false;
+            }
+            //---end popup code
+            function flipDuendeIfNeeded() {
+
+                if (!document.getElementById("chooseButton").checked) {
+                    duendeActual.className = "duende reverse stop";
+                } else {
+                    duendeActual.className = "duende backNormal stop";
+                }
+            }
+
+            function flipPlaceholderIfNeeded() {
+                if (!document.getElementById("chooseButton").checked) {
+                    document.getElementById("txtIn").setAttribute("placeholder", "but not everything");//find out what's in a number");
+                    document.getElementById("txtIn").style.color = "#00BBFB";
+                } else {
+                    document.getElementById("txtIn").setAttribute("placeholder", "anything is a number");
+                    document.getElementById("txtIn").className = "text";
+                    document.getElementById("txtIn").style.color = "#000000";
+                }
+
+                var checkboxvar = document.getElementById('chooseButton');
+                var labelvar = document.getElementById('checkboxlbl');
+                var holder = document.getElementById('graphswitch');
+                if (!checkboxvar.checked) {
+                    labelvar.innerHTML = '&#966;';
+                    //labelvar.style.color = '#00BBFB';
+                    holder.title = "it from bit";
+                } else {
+                    labelvar.innerHTML = '&#968;';
+                    //labelvar.style.webkitTransform = "scale(-2, -1)";
+                   // labelvar.style.color = 'black';
+                    holder.title = "bit from it";
+                }
+            }
+        </script>                        
+        <title>The List · find anything in the universe and beyond</title>
+    </head>
+    <body onload="
+            normalizeCSS();
+            flipDuendeIfNeeded();
+            flipPlaceholderIfNeeded();
+            setDataSourceToKeyboard(true);
+            fireFromURL();
+            document.getElementById('loading-overlay').style.opacity = 1;
+            setTimeout(preloadIMG, 100);
+          ">                    
+
+        <div id="loading-overlay" style="
+             position: absolute;
+             z-index: 1000;
+             height: 100%;
+             width: 100%;
+             left: 0;
+             top: 0;
+             background-color: #CCDDEE;
+             color: white;
+             font-family: arial;
+             font-weight: bold;
+             font-style: italic;
+             font-size: 5em;               
+             padding-top: 10%;
+             text-align: center;            
+             transition: opacity 0.10s ease-out;
+             opacity:0;
+             " onclick="this.style.display='none';">Loading everything...
+            <script>
+                  //function sleepFor( sleepDuration ){
+                  //  var now = new Date().getTime();
+                  //  while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
+                  //  }
+
+                function preloadIMG() {
+                    //sleepFor(20000);
+                    var img1 = new Image();
+                    var img2 = new Image();
+                    var img3 = new Image();
+
+                    img1.src = "../img/sprite_duende_uno.png";
+                    img2.src = "../img/sprite_duende_dos.png";
+                    img3.src = "../img/sprite_duende_tres.png";
+                    document.getElementById('loading-overlay').style.opacity = 0;
+                    setTimeout(document.getElementById('loading-overlay').style.display = 'none', 100);
+                }
+                var rot = 0;
+                
+                function clickNumberSystem(){
+                               rot = (rot + 1) % 3;
+                               var arr = ['dec', 'hex', 'bin'];
+                               document.getElementById('numbersystem').value = arr[rot];                                                             
+                               if (document.getElementById('chooseButton').checked) {
+                                   /*si esta en modo data2number dispara*/
+                                   fireList();
+                               } else {
+                                   /*sino borra (podria hacer auto-conversion de base, pero de momento no lo hace)*/
+                                   clearIn();
+                               }
+                               memoizeListInv.cache = {};
+                               memoizeList.cache = {};
+                               normalizeCSS();
+                    
+                }
+                
+            </script>
+
+        </div>
+
+        <div id="topdiv" style="top: 0px;">
+            <div style="float:right; right: 1em; text-align:right;">
+                <a href="./about.html" class="linkMyPages" title="about it">&nbsp;&nbsp;i&nbsp;&nbsp;</a>
+            </div>
+            <div style="float:left; left: 1em; text-align: left;  display: inline-block;">
+                <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" title="numeral system base (hex is faster!)"
+                       onclick="clickNumberSystem();"                                
+                       value="dec">                       
+            </div>
+        </div>
+
+        <div id="maindiv" align="center" style="margin:0em 0pt;">
+            <form id="formulario" oninput="closeShare();fireList(event)">                
+                <!--
+                <p id="searchTitle" class="text" onclick="if(document.getElementById('searchTitle').innerHTML.indexOf('W')!==-1){ document.getElementById('searchTitle').innerHTML=memoizeList(document.getElementById('searchTitle').innerHTML)}else {document.getElementById('searchTitle').innerHTML='What\'s in a number'}">What's in a number?</p>
+                -->
+                <!--
+                <p class="text">The List</p>                    
+                -->
+                <table style="margin:0pt 0pt;">
+                    <tr>
+                    <div>
+                        <textarea class="text" style="border-style: solid; padding: .2em;" id="txtIn" autofocus="autofocus" name="Search" title="Search" ></textarea>                                            
+                    </div>                 
+                    <div id="graphswitch" class="onoffswitch" style="margin-bottom: 1em; margin-top:2px; font-size: 3em;" title="it from bit"> 
+
+                        <input type="checkbox" name="onoffswitch" class="psiphi"
+                               onclick="flipDuendeIfNeeded();/*it from bit switch*/
+                                       flipPlaceholderIfNeeded();
+                                       copyToTxtIn();
+                                       fireList();" style="display:none" class="" id="chooseButton" checked>
+                        <label  id="checkboxlbl" class="psiphilbl" for="chooseButton">&#966;</label>
+                        <!--<label class="onoffswitch-label" for="chooseButton">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                        -->
+                    </div>                     
+                    </tr>
+                </table>                   
+            </form>            
+            <a href="javascript:void(0)">
+                <div id="duendecontainer">                
+                    <div class="duende stop" id="duende" style="display:none;" onclick="animateAndSearch();"/></div>
+        </div>
+    </a>                        
+    <div>             
+        <!--
+        <label id="parseEnableTxt" style="visibility:hidden;font-family: consolas; font-style: italic;">                                    
+        <input type="checkbox" style="visibility:hidden;" id="parseEnable" onclick="listaInv(lastInput, false);"  title="I'll try to understand" >					
+        reparse
+        </label> 
+        -->		
+        <div id="erms" style="padding-bottom: 1em;"></div> 
+        <div id="actions" style="visibility: hidden;">            
+            <table id="tablaActions" align="center"  style="overflow: hidden;" >
+                <tr>
+                    <td>
+                        <!-- share pop-->    
+                        <div style="display: none; font-size:1em; font-family: Consolas;" id="sharePop" class="messagepop"><b>Link to number</b>
+                            <label style="display: none;/*hidden by now*/font-size: 0.8em;" title="direct download "><input id="withDl" type="checkbox" name="checkbox" value="value" onclick="togglePop(document.getElementById('sharePop'));
+                                    clickShare();">dl</label>
+                            <label style="display: none;/*hidden by now*/font-size: 0.8em;" title="guess parsing"><input id="withGuess" type="checkbox" name="checkbox" value="value" onclick="togglePop(document.getElementById('sharePop'));
+                                    clickShare();">guess</label>
+
+                            <form method="post" id="new_message" action="/messages">        
+                                <p><textarea rows="2" name="body" id="linkToCopy" cols="35"></textarea></p>
+                                <p>
+                                    <a id="shareTwitt" href="/" style="float:right;" title = "tweet it"></a>			
+                                    <a id="go" href="/" style="float:left;" title="Follow link" >Go</a>			
+                                </p>                                
+                            </form>                                
+                            <button class="closeX" onclick="closeShare();" style="font-size:1.2em; font-weight: bold; border:1px; border-color: darkgray; border-style: solid; ">X</button>
+                        </div>
+                        <!-- share launch-->                                
+                        <div id="sharediv" onclick="clickShare();
+                                return false;"  title="Link Share">
+                        </div>        
+                    </td>
+                    <td style="width:1em;">
+                    </td>                                
+                    <td>                                
+                        <div>
+                            <input id="saveButton" type="button" class="myButton" style="visibility: hidden;" value="" onclick="saveResult();" title="Download">
+                        </div>                                      
+                    </td>
+                    <td id="tdParseButton" style="width:1em;" style="visibility: hidden;">
+                    </td>                                
+                    <td>
+                        <div>   
+                            <input id="parseEnable" style="display:inline-block;visibility:hidden;"  class="cmn-toggle cmn-toggle-yes-no" type="checkbox" onclick="listaInv(lastInput, false);">
+                            <label id="parseEnableTxt" for="parseEnable" style="visibility:hidden;" title="Guess parsing" data-on="" data-off=""></label>                         
+                        </div>                                                            									                                                                                                            
+                    </td>  
+                </tr>     
+            </table>
+        </div>
+    </div>             
+
+    <script>
+        function SelectText(element) {
+            var doc = document
+                    , text = doc.getElementById(element)
+                    , range, selection;
+
+            if (doc.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        }
+        var toggleActions = false;
+        function mouIn(e, obj) {
+            var x = e.clientX,
+                    y = e.clientY;
+
+            var act = document.getElementById('actions');
+            act.style.visibility = 'visible';
+            act.style.display = 'block';
+            setVisibleButtons(true);
+
+            //act.style.position= 'absolute';
+            //act.style.top= (document.body.scrollTop + y - 50 )+'px';
+            // act.style.left = x + 'px';
+            return true;
+        }
+        ;</script>
+    <!--<a href="javascript:void(0)" style="text-decoration: none; color:black;"><div id="copy" style="background: transparent; height: 1em; border: black; font-size: 1em;"  onclick="copyToTxtIn();">-->            
+    <p style="border: none;" onmouseover="mouIn(event, this);" onclick="mouIn(event, this);"
+                             ondblclick="SelectText(this.id);"
+                             readonly="" title="" id="result"></p>
+    <!-- </div></a>  -->
+    <script type="application/javascript" src="js/firethelist.min.js">
+        var txtVar = document.getElementById("txtIn");                    
+        //txtVar.onkeyup = fireList;                    
+        document.getElementById("saveButton").setAttribute("tabIndex", "-1");
+        document.getElementById("formulario").setAttribute("tabIndex", "-1");
+    </script>	                        
+
+    <div id="progress_bar" style="visibility:hidden;"><div class="percent">0%</div></div>
+    <button id="cancel_button" onclick="abortRead();" style="visibility:hidden;">Cancel read</button>
+    <script type="application/javascript" src="js/filemanager.min.js">                      
+    </script>                     
+</div>                       
+</body>
+</html>

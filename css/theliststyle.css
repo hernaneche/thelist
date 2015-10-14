@@ -1,0 +1,357 @@
+:focus{
+    outline:0; /*removes the dotted border*/
+}
+
+input[type="text"]{
+    font-size:32px;
+    font-family: Consolas;
+}		
+
+/*link*/
+#sharediv{
+   height:30px;
+   width: 30px;            
+   display: none;
+   cursor: pointer; 
+   background: url("../img/link.png") no-repeat center center;   
+   border: 0px solid #d4ffcc;
+   text-align:center;
+   font-size: 1.1em;
+   font-family: consolas;  
+   font-weight: bold; 
+   /*background-color: #d4ffcc;  */
+   border-radius: 3px;
+   
+}
+
+/*download savebutton*/
+.myButton {    
+    height:30px;
+    width: 30px;      
+    background:  url("../img/download.png") no-repeat center center;   
+    border:0px solid #87969C;
+    display:inline-block;    
+    cursor:pointer;
+    color:black;
+    font-family: Consolas, sans-serif;
+    font-size:18px;
+    font-weight: bold;
+    vertical-align: middle;
+    /*padding:6px 24px;*/
+    text-decoration:none;
+   /* text-shadow:0px 1px 0px #67767C;*/
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+.data{
+    border-color: #FFD700;
+}
+
+.data:hover {
+        color: #000000;
+	border-color:#FFFF00;
+}
+.data:active {  
+	position:relative;
+	top:1px;
+}
+
+.number{
+    border-color: #00D7DD;
+}
+.number:hover {
+        color: #000000;
+	border-color: #00FFFF;
+}
+.number:active {  
+	position:relative;
+	top:1px;
+}
+
+textarea {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+.text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2em;                
+    height: 4em;
+    width: 55%;
+    font-size:28px;				
+    font-family: Consolas;
+}
+
+
+/*mensajes de error*/
+
+.msg{
+    font-size:30px;            
+    font-style: italic;
+    display:inline;
+}
+
+p.sys{    
+    color:green;                    
+}           
+p.err{    
+    color:lightcoral;                        
+}
+p.text{                                   
+    font-size:48px;                
+    font-family: Verdana;				    
+}
+#result{                
+    font-size:35px;
+    word-wrap: break-word;
+    font-family: Consolas;
+}            
+
+/*Estilo para mensaje detras del textarea*/
+::-webkit-input-placeholder { /* WebKit browsers */                
+    color:    #BBB;
+    font-style: italic;                
+    text-align:center;                                
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #BBB;
+    font-style: italic;
+    text-align:center
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #BBB;
+    font-style: italic;
+    text-align:center
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #BBB;
+    font-style: italic;
+    text-align:center
+}
+
+/*Estilo para links entre paginas*/
+.linkMyPages{    
+    font-size: 1.5em;    
+    color:black;        
+    text-decoration: none;
+    font-family: monospace;
+    /*font-style: italic;*/
+    background-color: #EEE;    
+    border-radius: 0.2em;
+}
+/*Estilo para dropdown list*/
+select{                
+    height: 1.4em;
+    background-color: #DDD;    
+    border-radius: 0.2em;                                
+    text-align: center;
+    vertical-align: top;
+    color: black;               
+    font-size: 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+}
+
+#progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+#progress_bar.loading {
+    opacity: 1.0;
+}
+#progress_bar .percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+}
+
+#nav{
+    background-color:#99B9C9;
+    margin-left: 25%;         
+    width:50%;            
+    box-shadow: .5em .5em 2em #5E5E5E;
+    box-sizing: border-box;
+    position:fixed;
+    top:15%;            
+    display: block;            
+    font-family: Arial;
+    font-size: 23px;
+    text-align: center;
+    vertical-align: middle;
+}
+#footer{
+    background-color:#FEFEEE;
+}
+
+.block {               
+    width:100%;               
+    box-sizing: border-box;
+    box-shadow: 0em .5em 2em #5E5E5E;
+    position: fixed;
+    top:1%;
+    font-family: Consolas;
+    font-size: 12px;                
+    text-align: center;                          
+    color:red;
+}
+
+.psiphilbl{    
+    color: #00BBFB;    
+}
+
+.psiphi:checked + .psiphilbl {
+    color: #000000;
+}
+.psiphilbl:hover{    
+    cursor: pointer;
+}
+
+.onoffswitch {
+    position: relative; width: 152px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #CCCCCC; border-radius: 2px;
+}
+.onoffswitch-inner {        
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.2s linear 0s; -webkit-transition: margin 0.2s linear 0s;
+    -o-transition: margin 0.2s linear 0s; transition: margin 0.2s linear 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 20px;
+    font-size: 15px; color: white; font-family: Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+/*en on */
+.onoffswitch-inner:before {
+    content: "data to number"; /*"bits from it";*/
+    padding-left: 2px;
+    background-color: #FFFFFF; color: #6E996E;
+    text-align: left;
+}
+/*en off*/
+.onoffswitch-inner:after {
+    content: "number to data";/*it from bits*/
+    padding-right: 5px;
+    background-color: #000000; color: #00BBFB;
+    text-align: right;
+}
+
+/*llave cinto */
+.onoffswitch-switch {
+    display: block; height:18px; width: 24px; margin: 0px;
+    background: #202020;
+    border: 5px solid #af9d71;/* af9d71;*/
+    border-radius: 3px;
+    position: absolute; top: 0px; bottom: 0; right: 120px;
+    -moz-transition: all 0.2s linear 0s; -webkit-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s; transition: all 0.2s linear 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+#duendecontainer{
+    width: 257px;  
+    height: 236px;
+}
+.duende{
+    
+    width: 428px;  
+    height: 393px;
+    
+    -webkit-transform-origin:left top;
+    -moz-transform-origin:left top;
+    
+    -webkit-backface-visibility: hidden;    
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+    overflow:hidden;
+    -webkit-transform: scale(.6,.6); 
+    -moz-transform: scale(.6,.6);
+    -ms-transform: scale(.6,.6);
+    transform: scale(.6,.6);
+
+
+}
+
+.stop{    
+     
+    background-image: url("../img/sprite_duende_tres.png");
+    background-position: -10700px;/*last image*/
+}
+
+.backNormal{              
+    /*
+    -webkit-transition: -webkit-transform 1s ease;
+    -webkit-transform: scale(.6,.6) rotate(0deg);
+    -moz-transition: -moz-transform 1s ease;
+    -moz-transform: scale(.6,.6) rotate(0deg);
+    -o-transition: -o-transform 1s ease;
+    -o-transform: scale(.6,.6) rotate(0deg);    
+    transition: transform 1s ease;
+    transform: scale(.6,.6) rotate(0deg);       
+    */
+}
+
+.reverse {         
+    /*gira una vuelta*/ 
+    /*
+    -webkit-transition: -webkit-transform 1s ease;
+    -webkit-transform: scale(.6,.6) rotate(-360deg);
+    -moz-transition: -moz-transform 1s ease;
+    -moz-transform: scale(.6,.6) rotate(-360deg);
+    -o-transition: -o-transform 1s ease;
+    -o-transform: scale(.6,.6) rotate(-360deg);
+    transition: transform 1s ease;
+    transform: scale(.6,.6) rotate(-360deg); 
+    */
+}   
+
+/*popup*/
+
+.messagepop {
+  background-color:#d6dcde;
+  border:1px solid #999999;  
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  z-index:50;
+  padding: 25px 25px 20px;
+  border-radius: 3px;
+}
+
+   
+.closeX {
+  border-style:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 1px;
+}

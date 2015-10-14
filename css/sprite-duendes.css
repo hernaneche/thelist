@@ -1,0 +1,110 @@
+.inicio {
+   
+    background-image: url("../img/sprite_duende_uno.png");
+
+    -webkit-animation: play1 2s steps(18) forwards;
+    -moz-animation: play1 2s steps(18) forwards;
+    -ms-animation: play1 2s steps(18) forwards;
+    -o-animation: play1 2s steps(18) forwards;
+    animation: play1 2s steps(18) forwards;
+
+}
+
+@-webkit-keyframes play1 {
+    from { background-position:    0px; }
+    to { background-position: -7704px; }
+}
+
+@-moz-keyframes play1 {
+    from { background-position:    0px; }
+    to { background-position: -7704px; }
+}
+
+@-ms-keyframes play1 {
+    from { background-position:    0px; }
+    to { background-position: -7704px; }
+}
+
+@-o-keyframes play1 {
+    from { background-position:    0px; }
+    to { background-position: -7704px; }
+}
+
+@keyframes play1 {
+    from { background-position:    0px; }
+    to { background-position: -7704px; }
+}
+
+.buscar {
+    width: 428px;  
+    height: 393px;
+    background-image: url("../img/sprite_duende_dos.png");
+
+    -webkit-animation: play2 2s steps(8) infinite;
+    -moz-animation: play2 2s steps(8) infinite;
+    -ms-animation: play2 2s steps(8) infinite;
+    -o-animation: play2 2s steps(8) infinite;
+    animation: play2 2s steps(8) infinite;
+
+}
+
+@-webkit-keyframes play2 {
+    from { background-position:    0px; }
+    to { background-position: -3424px; }
+}
+
+@-moz-keyframes play2 {
+    from { background-position:    0px; }
+    to { background-position: -3424px; }
+}
+
+@-ms-keyframes play2 {
+    from { background-position:    0px; }
+    to { background-position: -3424px; }
+}
+
+@-o-keyframes play2 {
+    from { background-position:    0px; }
+    to { background-position: -3424px; }
+}
+
+@keyframes play2 {
+    from { background-position:    0px; }
+    to { background-position: -3424px; }
+}
+
+.final {    
+    background-image: url("../img/sprite_duende_tres.png");
+
+    -webkit-animation: play3 2s steps(25) forwards;
+    -moz-animation: play3 2s steps(25) forwards;
+    -ms-animation: play3 2s steps(25) forwards;
+    -o-animation: play3 2s steps(25) forwards;
+    animation: play3 2s steps(25) forwards;		
+
+}
+
+@-webkit-keyframes play3 {
+    from { background-position:    0px; }
+    to { background-position: -10700px; }
+}
+
+@-moz-keyframes play3 {
+    from { background-position:    0px; }
+    to { background-position: -10700px; }
+}
+
+@-ms-keyframes play3 {
+    from { background-position:    0px; }
+    to { background-position: -10700px; }
+}
+
+@-o-keyframes play3 {
+    from { background-position:    0px; }
+    to { background-position: -10700px; }
+}
+
+@keyframes play3 {
+    from { background-position:    0px; }
+    to { background-position: -10700px; }
+}
