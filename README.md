@@ -3,7 +3,6 @@
 <link href="css/theliststyle.css" rel="stylesheet" type="text/css">   
 <div style="position: fixed; top: 1em; right: 2em; text-align:right;">
 <a href="javascript:history.back();" class="linkMyPages" title="&#8469;">back</a></div>
-##The List 
 ###Find anything in the universe and beyond
 
 www.thelistofeverything.com
