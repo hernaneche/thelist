@@ -64,19 +64,3 @@ Having said that..
 ####Disclaimer    
 *This site is now running at your local computer.  Authors can't control its usage as well as authors of dictionaries can't control how its words are combined. Be careful.*
 
-
-
-<br>
-<pre>	
- ..the number of possible public histories of the world
-       which differ from each other is limited
-            and does not exceed the number N.
-
-
-
-                             Gottfried Wilhelm Leibniz 
-                 "De l’Horizon de la Doctrine Humaine"(1693)     
-
-</pre>    
-
-<br><br><br><br><br>
