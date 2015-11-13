@@ -7,6 +7,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
    
+
 ##What is The List? 
 
 It's a fixed connection between *data* and *numbers* .
@@ -17,15 +18,15 @@ Insert any *number* &#8594; get the *data*
 Data could be anything, texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
 
 
-
+<br>
 ###What's in a number? 
 
 Any natural numbers is different to any other, they can be uniquely identified, and each one represents any distinct data possible, texts, sound, pictures, videos,.. any data can be coded into a number.
 
 We could say everything is on the list, as we could say there are things that are not there, but both are fictions.
 
-
-###How can the list contain a picture before it was taken, who made it?
+<br>
+###How can the list contain a picture before it's taken, who made it?
 
 It has been forever.
 
@@ -47,15 +48,21 @@ Having said that..
 © [20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
 
 
+  
+<br>
+###More
+
+ [Examples of numbers found on the list](./examples.html)  
+ [Philosophy](./morephilostuff.html)  
+ [Technical details on how is it made](./technicalities.html)  
+ [A bit of poetry](./readme.html)  
+ [See the list itself](./nav.html)  
+ [Contact us](./index.html?id=152575330250725041842718167543100159816576490762093)
 
 
+<br>
 ####Disclaimer    
 *This site is now running at your local computer.  Authors can't control its usage as well as authors of dictionaries can't control how its words are combined. Be careful.*
-
-  
-
-For more confusion [contact me](./index.html?id=152575330250725041842718167543100159816576490762093).
-
 
 
 
