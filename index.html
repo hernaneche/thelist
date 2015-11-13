@@ -23,6 +23,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="shortcut icon" href="img/favicon.ico"/>        
         <link href="css/theliststyle.css" rel="stylesheet" type="text/css">       
+        <link href="css/tooltip.css" rel="stylesheet" type="text/css">       
         <link rel="stylesheet" type="text/css" href="css/sprite-duendes.css">         
         <link rel="stylesheet" type="text/css" href="css/togglestyle.css">       
         <!--<link rel="prefetch" href="../img/sprite_duende_uno.png"/>
@@ -189,11 +190,20 @@
                                document.getElementById('numbersystem').value = arr[rot];                                                             
                                if (document.getElementById('chooseButton').checked) {
                                    /*si esta en modo data2number dispara*/
-                                   fireList();
+                                   
                                } else {
                                    /*sino borra (podria hacer auto-conversion de base, pero de momento no lo hace)*/
-                                   clearIn();
+                                   //dec->hex->bin->dec
+                                   var choosen=getChoosenSystem();
+                                   if (choosen === "dec"){
+                                       document.getElementById('txtIn').value=hexToDec(binToHex(document.getElementById('txtIn').value));                                       
+                                   }else if (choosen === "hex"){
+                                        document.getElementById('txtIn').value=decToHex(document.getElementById('txtIn').value);                                        
+                                   }else if (choosen === "bin"){
+                                        document.getElementById('txtIn').value=hexToBin(document.getElementById('txtIn').value);                                        
+                                   }                                    
                                }
+                               fireList();
                                memoizeListInv.cache = {};
                                memoizeList.cache = {};
                                normalizeCSS();
@@ -205,13 +215,15 @@
         </div>
 
         <div id="topdiv" style="top: 0px;">
-            <div style="float:right; right: 1em; text-align:right;">
-                <a href="./about.html" class="linkMyPages" title="about it">&nbsp;&nbsp;i&nbsp;&nbsp;</a>
+            <div class="tooltip r" style="float:right; right: 1em; ">
+                <a href="./about.html" class="linkMyPages" >&nbsp;&nbsp;i&nbsp;&nbsp;</a>
+                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><em>About</em> What is the list?</span></a>
             </div>
-            <div style="float:left; left: 1em; text-align: left;  display: inline-block;">
-                <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" title="numeral system base (hex is faster!)"
+            <div class="tooltip" style="float:left; left: 1em; text-align: left;  display: inline-block;" >                
+                <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" 
                        onclick="clickNumberSystem();"                                
-                       value="dec">                       
+                       value="dec">
+                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><em>Convert</em>Change numeral system base</span></a>
             </div>
         </div>
 

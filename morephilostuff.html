@@ -1,50 +1,363 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>morephilostuff</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-body{  font-family:'Merriweather', 'Georgia', serif; font-weight:300; font-size: 18px;  text-align: justify;margin: 0 auto; width: 45em;}
-h1,h2,h3,h4{ font-family: "Open Sans", sans-serif;color:#000; margin-top:1.6em; margin-bottom:.4em; }
-h3{font-size: 1.5em; }
-h4{font-size: 1.1em; }
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<style>/*
+ * https://bitbucket.org/kevinburke/markdowncss
+ *
+ * Copyright 2011 Kevin Burke unless otherwise noted.
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ *
+ *   Some content is copyrighted by Twitter, Inc., and also released under an
+ *   Apache License; these sections are noted in the source.
+ */
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 30px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+    /* The bottom margin is small. It's designed to be used with gray meta text
+     * below a post title. */
+    margin: 24px 0 6px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+/*    font-size: 13px;*/
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+/* Code below this line is copyright Twitter Inc. */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 </style>
 </head>
 <body>
 <p><link rel="shortcut icon" href="img/favicon.ico"/>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
-<link href="css/theliststyle.css" rel="stylesheet" type="text/css">   </p>
+<link href="css/theliststyle.css" rel="stylesheet" type="text/css"></p>
+
 <div style="position: fixed; top: 1em; right: 2em; text-align:right;">
 <a href="javascript:history.back();" class="linkMyPages" title="&#8469;">back</a></div>
-<h2>More philosophy stuff</h2>
-<hr />
-<h4>A list</h4>
-<p><strong>There is already</strong> a definite number for any possible input, and there is no need to <em>store</em> all possibles but it's enough to generate on demand when you summon it, <em>the number is enveloped in the algorithm</em>, so it's implicit defined, even <em>before</em> we input any data, a number can index a book or a picture without having to ever input that data, i.e. we could get a book with no need to of a writer... well, the problem is how to know that number? that's not easy, but just possible, indeed if you insert a book data, it will reveal which number it <em>was</em>, but the number has been around forever, already there but hard to guess.</p>
-<h4>Outside the list</h4>
-<p>Any perceivable phenomenon could be represented through symbols (of course <em>after</em> the known experience) so a symbolic recording, although different from its source reality, could be indistinguishable from it. Then we can not experience or create things outside a certain <em>amount</em> of possibles, it's a big space, but not infinite, so every possible distinguishable fits on a list.</p>
-<p>We could imagine that everything <em>is already</em> on a list of possible realities, waiting there, even before anyone develop or experience them, before we all were born; regardless of us. </p>
-<p>No thing can exist nor happen that is not already on the list</p>
-<p>The bad news (or good depending on your view) is that <em>most stuff on the list is incurably incomprehensible; between any item and its explanation, there are far more unexplained things. Understand everything, is an oxymoron.</em></p>
-<h4>Interpreters and many lists</h4>
-<p>Can we talk about a list of <em>perceivable</em> things without regard to <em>who or what</em> perceives it?   </p>
-<p>Any possible being that has a enough finite perception to even be called perception (and being), will be bounded by a custom list of possibles.</p>
-<p>Of course as integral living beings itself we can not fit on the list (not even all numbers can!), indeed we can talk <em>about</em> anything, but we cannot <em>talk anything</em> (we talk words, we don't talk an icecream for example, let alone a universe..). It's perfectly possible to think about other beings, other lists, and things outside the list, there the list reveals itself incomplete, subjective, and so on, and it's clear that the list doesn't have <em>absolutely</em> everything indeed, but it has anything, all for you, for me, and for everyone; that's all folks.  </p>
-<p>In some sense, every list is the same list.</p>
-<h4>Arguments 'against the list'</h4>
-<p>Somebody could say</p>
-<blockquote>
-<p>&quot;Reality is not a reproduction, even if under certain circumstance we can confuse special effects with reality, like a bird hitting a mirror, we can still distinguish the past from the future, &quot;the list&quot; does not include our time, then sorry &quot;list&quot; but I can recognize pretty well when I'm getting older!&quot;</p>
-</blockquote>
-<p>and of course the classical one, from Heraclitus </p>
-<blockquote>
-<p>&quot;No man ever steps in the same river twice, for it's not the same river and he's not the same man&quot;</p>
-</blockquote>
-<p>But don't worry, the list is big enough to handle it all, the list doesn't have time, it's right, but it has the whole history of any man, of any river and the changes over them, so before judging about <em>changes</em> in a river or in a man, we should be able to ask if those were a river or a man in first place.</p>
-<p>Send your own complain!</p>
-<h3>History</h3>
-<p>The very idea of posibble outcomes is as old as humanity can remember, so we can't list every person ever say something about it, anyway <a href="./peoplerelated.html">here another incomplete list of people related with the list</a>.  </p>
-<p><br><br></p>
 
+
+<h2 id="Philosophy.stuff">Philosophy stuff</h2>
+
+<hr />
+
+<pre>   
+ ..the number of possible public histories of the world
+       which differ from each other is limited
+            and does not exceed the number N.
+
+
+
+                             Gottfried Wilhelm Leibniz 
+                 "De l’Horizon de la Doctrine Humaine"(1693)     
+
+</pre>
+
+
+<p></p>
+
+<h3 id="A.list">A list</h3>
+
+<p><strong>There is already</strong> a definite number, for any possible input, there is no need to <em>store</em> all possibles, it&rsquo;s enough to generate them on demand when you summon it, <em>the number is enveloped in the algorithm</em>, it&rsquo;s implicit defined, even <em>before</em> we input any data, a number can index a book or a picture without having to ever input that data, i.e. we could get a book with no need to of a writer.  Well, not so fast, the problem is how to know that number in advance? that&rsquo;s not easy, but possible, just slightly possible; indeed if you insert a book data <em>then</em> it will reveal which number it <em>was</em>, and that number has been around forever, already there but very hard to guess.</p>
+
+<h4 id="The.list.has.anything..does.it.has.everything.">The list has anything, does it has everything?</h4>
+
+<p>How many things we can recognize as being different things?. We are limited, in time, space, and also in the degree of detail we can perceive, then with a great enough digital resolution in a virtual &lsquo;realism&rsquo; experience, we are not able to distinguish it from any other upper resolution experience, neither from any other reality. Given enough details there is finally a threshold, where there is no further distinction we can do.</p>
+
+<p>Our limits in perception, memory, reasoning and lifetime outline this upper bound, how many colours, how many concepts, how many books, how many songs, paints, movies, or any invention that we could possibly make, then all the experiences any human can ever have are limited within a finite number of possibilities that despite being huge, is still finite as we are. So a list doesn&rsquo;t need to be unbounded to have it everything.</p>
+
+<h4 id="Outside.the.list">Outside the list</h4>
+
+<p>Any perceivable phenomenon could be in principle be represented through symbols (of course <em>after</em> the known experience) a symbolic recording that, although different, could be reproduced indistinguishable from its source reality. Then we can only experience or create things inside a certain <em>amount</em> of possibles, a big space, but not infinite, every possible distinguishable fits on a list.</p>
+
+<p>We could then imagine that everything <em>is already</em> on a list of possible realities, waiting there, before anyone develop or experience them, before we all were born; regardless of us. No thing can exist nor happen that is not already on the list.</p>
+
+<p>The bad news (or good depending on your view) is that it&rsquo;s perhaps easier to evolve a whole universe than finding things on the list by chance, <em>*most stuff on the list is incurably incomprehensible; between any item and its explanation, there are far more unexplained things.</em>  Understand everything, is an oxymoron.</p>
+
+<h4 id="Interpreters.and.many.lists">Interpreters and many lists</h4>
+
+<p>Can we talk about a list of <em>perceivable</em> things without regard to <em>who or what</em> perceives it?</p>
+
+<p>Any possible being that has a enough finite perception to even be called perception (and being), will be bounded by a custom list of possibles.</p>
+
+<p>Of course as integral living beings itself we can not fit on the list (not even all numbers can!). It&rsquo;s perfectly possible to think about things outside any list and other beings, their lists, and so on, the list reveals itself incomplete, it do not have <em>absolutely</em> everything indeed, but it can has <em>anything</em>, that&rsquo;s all for you, for me, and for everyone; that&rsquo;s all folks.</p>
+
+<p>In some sense, every list is the same list.</p>
+
+<h4 id="Arguments.against.the.list">Arguments against the list</h4>
+
+<p>Some ladies and gentlemen could call me saying</p>
+
+<blockquote><p>&ldquo;Reality is not a reproduction, even if under certain circumstance we can confuse special effects with reality, like a bird hitting a mirror, we can still distinguish the past from the future, "the list&rdquo; does not include our time, so  sorry for &ldquo;the list&rdquo; but it lacks of time, and I can recognize pretty well when I&rsquo;m getting older!"</p></blockquote>
+
+<p>and quote the classical one, from Heraclitus</p>
+
+<blockquote><p>&ldquo;No man ever steps in the same river twice, for it&rsquo;s not the same river and he&rsquo;s not the same man&rdquo;</p></blockquote>
+
+<p>But don&rsquo;t worry, the list is big enough to handle it all, the list doesn&rsquo;t have time, that&rsquo;s right; but it has the whole history of any man, of any river and the changes over them, so before judging about <em>changes</em> in a river or in a man, we should be able to ask if those were a river or a man in first place.</p>
+
+<p>Send your own complain!</p>
+
+<h3 id="History.of.the.concept">History of the concept</h3>
+
+<p>The very idea of posible outcomes is as old as humanity can remember, so we can&rsquo;t list every person ever say something about it, anyway <a href="./peoplerelated.html">here is another incomplete list of people related with the list</a>.</p>
+
+<p><br><br></p>
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
