@@ -10,33 +10,32 @@
 
 ##What is The List? 
 
-It's a fixed connection between *data* and *numbers* .
+It's a connection between *data* and *numbers* .
 
 Insert any *data* &#8594; get unique *number*  
 Insert any *number* &#8594; get the *data*
 
-Data could be anything, texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
-
+It could be any data, anything, texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
 
 <br>
 ###What's in a number? 
 
-Any natural numbers is different to any other, they can be uniquely identified, and each one represents any distinct data possible, texts, sound, pictures, videos,.. any data can be coded into a number.
+Every natural numbers is different to any other, they can be uniquely identified, and each one represents each of all possible distinct data, texts, sound, pictures, videos,.. so any data can be coded into a number.
 
 We could say everything is on the list, as we could say there are things that are not there, but both are fictions.
 
 <br>
 ###How can the list contain a picture before it's taken, who made it?
 
-It has been forever.
+It has been forever, in the land of possibilities.
 
-*What’s an author?* How can the concept of an author even exist, given that anything possible can be found by counting, with no creator?  
+So *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, with no creator?  
    
-The answer is that authors meet those numbers faster than any method, that's how authors are defined, even though they themselves could be a domino of a larger process.
+The answer is that authors meet those numbers faster than any method, and that's how authors could be defined, even though they themselves could be a domino of a larger process.
 
 Having said that..
 
-####Authors
+####Authors 
 
 
 © [27086663139725297139551116314403586124412942223045241](./index.html?id=27086663139725297139551116314403586124412942223045241 "27086663139725297139551116314403586124412942223045241")
@@ -46,7 +45,6 @@ Having said that..
 © [5417678247864839871921629457519](./index.html?id=5417678247864839871921629457519 "5417678247864839871921629457519")  
 © [89564249298695624698072835829054665327](./index.html?id=89564249298695624698072835829054665327)  
 © [20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
-
 
   
 <br>
