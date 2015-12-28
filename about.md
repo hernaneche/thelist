@@ -103,7 +103,7 @@ All these are in decimal
 <br>
 
 <br> 
-*Given that the list has anything, ok, I can agree in that these are too few examples...*
+*Given that the list has anything, I can agree in that these are too few examples...*
 <br>
 
 ----
