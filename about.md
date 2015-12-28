@@ -1,10 +1,9 @@
 <div style="position: fixed; top: 1em; right: 2em; text-align:right; font-size:.8em;">
 <a href="javascript:history.back();" class="linkMyPages" title="&#8469;">back</a></div>
 </div>
-
+<link href="css/textstyle.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="img/favicon.ico"/>        
 <link href="css/theliststyle.css" rel="stylesheet" type="text/css">
-
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
    
 
@@ -15,16 +14,16 @@ It's a connection between *data* and *numbers* .
 Insert any *data* &#8594; get unique *number*  
 Insert any *number* &#8594; get the *data*
 
-It could be any data, anything, texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
+Numbers can encode any data, it could be texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
 
-<br>
+
 ###What's in a number? 
 
 Every natural numbers is different to any other, they can be uniquely identified, and each one represents each of all possible distinct data, texts, sound, pictures, videos,.. so any data can be coded into a number.
 
 We could say everything is on the list, as we could say there are things that are not there, but both are fictions.
 
-<br>
+
 ###How can the list contain a picture before it's taken, who made it?
 
 It has been forever, in the land of possibilities.
@@ -47,11 +46,12 @@ Having said that..
 © [20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
 
 ---
-##Examples ! here *interesting numbers*, found in the list
+##Examples !
+##Here some *interesting numbers* found in the list
 
 
 
-All these are in decimal   
+All these are in decimal 
 
 
 ####Sounds &#x266B;
@@ -103,7 +103,7 @@ All these are in decimal
 <br>
 
 <br> 
-*Given that the list has anything, I can agree in that these are too few examples...*
+*Given that the list has anything, we can agree in that these are too few examples...*
 <br>
 
 ----

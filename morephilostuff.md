@@ -1,6 +1,7 @@
 <link rel="shortcut icon" href="img/favicon.ico"/>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
 <link href="css/theliststyle.css" rel="stylesheet" type="text/css">   
+<link href="css/textstyle.css" rel="stylesheet" type="text/css">
 <div style="position: fixed; top: 1em; right: 2em; text-align:right;">
 <a href="javascript:history.back();" class="linkMyPages" title="&#8469;">back</a></div>
 
