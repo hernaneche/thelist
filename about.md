@@ -5,7 +5,7 @@
 <link rel="shortcut icon" href="img/favicon.ico"/>        
 <link href="css/theliststyle.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
-   
+<meta name="viewport" content="width=device-width, user-scalable=no">   
 
 ##What is The List? 
 
@@ -46,8 +46,7 @@ Having said that..
 © [20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
 
 ---
-##Examples !
-##Here some *interesting numbers* found in the list
+##Examples, here some *interesting numbers* found in the list
 
 
 
