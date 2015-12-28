@@ -77,12 +77,12 @@ textarea {
 }
 
 .text{
-    display: block;
+    display: block;	
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2em;                
     height: 4em;
-    width: 55%;
+    width: 60%;
     font-size:28px;				
     font-family: Consolas;
 }
