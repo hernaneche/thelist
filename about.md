@@ -9,32 +9,35 @@
 
 ##What is The List? 
 
-It's a connection between *data* and *numbers* .
+Is a connection between *data* and *numbers*.
+
+
+Given any data there is a number that encodes it, so different texts, images, sound, programs, files, and so on, can be encoded by numbers. In fact that's how data is stored inside a computer. 
+
+In the same way, given any possible *number* it's already encoding some data, although most of numbers combinations don't encode something useful for us, combinations are there, as empty lockers being able to be filled with meaning.
+
+Between ironic but seriously, this site aims an insight over our ability to distinguish, its scope, and to think about distinguishable things. 
 
 Insert any *data* &#8594; get unique *number*  
 Insert any *number* &#8594; get the *data*
 
-Numbers can encode any data, it could be texts, images, sound, programs, files, and so on. Between ironic and serious, this aims an insight over our ability to distinguish, its scope, and about distinguishable things in general. 
-
 
 ###What's in a number? 
 
-Every natural numbers is different to any other, they can be uniquely identified, and each one represents each of all possible distinct data, texts, sound, pictures, videos,.. so any data can be coded into a number.
-
-We could say everything is on the list, as we could say there are things that are not there, but both are fictions.
+Every natural numbers is different to any other, and can be uniquely identified, each one can encode any possible distinct data, so we could say that everything is already encoded on numbers, in the list of possibles.
 
 
-###How can the list contain a picture before it's taken, who made it?
+###How can the list contain a picture before it's taken? who made it?
 
 It has been forever, in the land of possibilities.
 
-So *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, with no creator?  
+Then *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, with no creator?  
    
 The answer is that authors meet those numbers faster than any method, and that's how authors could be defined, even though they themselves could be a domino of a larger process.
 
 Having said that..
 
-####Authors 
+####Site authors 
 
 
 © [27086663139725297139551116314403586124412942223045241](./index.html?id=27086663139725297139551116314403586124412942223045241 "27086663139725297139551116314403586124412942223045241")
@@ -46,7 +49,7 @@ Having said that..
 © [20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
 
 ---
-##Examples, here some *interesting numbers* found in the list
+###Examples, some *interesting numbers* found in the list
 
 
 
@@ -108,7 +111,7 @@ All these are in decimal
 ----
  
 
-###Even more
+###Even more  
 
   
  [Philosophy](./morephilostuff.html)  
