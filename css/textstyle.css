@@ -1,0 +1,13 @@
+body{  font-family:'Merriweather', 'Georgia', serif; font-weight:300; font-size: 18px; width: 45em;  max-width:90%; margin: 0 auto; text-align:justify; word-spacing:-2px;}
+pre{ font-size:1.1em;}
+h1,h2,h3,h4{ font-family: "Open Sans", sans-serif;color:#000; margin-top:1.6em; margin-bottom:.4em; }
+h3{font-size: 1.5em; }
+h4{font-size: 1.1em; }
+body{ 
+    background:linear-gradient(
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.9))
+    ,url("../img/background.jpg") center center no-repeat; 
+    background-attachment:fixed;  
+    background-size: cover;
+}
