@@ -14,7 +14,7 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
     font-family: Calibri, Tahoma, Geneva, sans-serif;
     left: 1em; top: 2em; z-index: 99;
-    margin-left: -50px; width: 160px;
+    margin-left: -80px; width: 160px;
 }
 .r:hover span{
     margin-left: -220px;
