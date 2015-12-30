@@ -77,12 +77,12 @@ textarea {
 }
 
 .text{
-    display: block;
+    display: block;	
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2em;                
     height: 4em;
-    width: 55%;
+    width: 60%;
     font-size:28px;				
     font-family: Consolas;
 }
@@ -139,11 +139,17 @@ p.text{
     font-size: 1.5em;    
     color:black;        
     text-decoration: none;
+    outline: none;
+    cursor:pointer;
     font-family: monospace;
     /*font-style: italic;*/
     background-color: #EEE;    
     border-radius: 0.2em;
 }
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
 /*Estilo para dropdown list*/
 select{                
     height: 1.4em;
@@ -355,3 +361,4 @@ select{
   right: 0;
   border-radius: 1px;
 }
+

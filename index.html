@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>  
      <!--
@@ -133,6 +133,39 @@
                     holder.title = "bit from it";
                 }
             }
+
+          function SelectText(element) {
+            var doc = document
+                    , text = doc.getElementById(element)
+                    , range, selection;
+
+            if (doc.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        }
+
+        function mou(e, obj, tf) {
+            var x = e.clientX,
+                  y = e.clientY;           
+            var act = document.getElementById('actions');
+            act.style.visibility = tf?'visible':'hidden';
+            act.style.display = tf?'block':'none';
+            setVisibleButtons(tf);
+	/*
+	            act.style.position= 'absolute';
+	            act.style.top= (document.body.scrollTop + y - 50 )+'px';
+	            act.style.left = x + 'px';
+	*/
+            return true;
+        }
         </script>                        
         <title>The List · Find anything in the universe, and beyond</title>
     </head>
@@ -180,7 +213,7 @@
                     img2.src = "../img/sprite_duende_dos.png";
                     img3.src = "../img/sprite_duende_tres.png";
                     document.getElementById('loading-overlay').style.opacity = 0;
-                    setTimeout(document.getElementById('loading-overlay').style.display = 'none', 100);
+                    setTimeout(function(){ document.getElementById('loading-overlay').style.display = 'none';}, 100);
                 }
                 var rot = 0;
                 
@@ -217,17 +250,17 @@
         <div id="topdiv" style="top: 0px;">
             <div class="tooltip r" style="float:right; right: 1em; ">
                 <a href="./about.html" class="linkMyPages" >&nbsp;&nbsp;i&nbsp;&nbsp;</a>
-                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><em>What is the list ?</em></span></a>
+                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><b>What is the list ?</b></span></a>
             </div>
             <div class="tooltip" style="float:left; left: 1em; text-align: left;  display: inline-block;" >                
                 <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" 
                        onclick="clickNumberSystem();"                                
                        value="dec">
-                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><em>Numeral system base</em></span></a>
+                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><b>Numeral system base</b></span></a>
             </div>
         </div>
 
-        <div id="maindiv" align="center" style="margin:0em 0pt;">
+        <div id="maindiv" align="center" style="margin:0em 0pt; ">
             <form id="formulario" oninput="closeShare();fireList(event)">                
                 <!--
                 <p id="searchTitle" class="text" onclick="if(document.getElementById('searchTitle').innerHTML.indexOf('W')!==-1){ document.getElementById('searchTitle').innerHTML=memoizeList(document.getElementById('searchTitle').innerHTML)}else {document.getElementById('searchTitle').innerHTML='What\'s in a number'}">What's in a number?</p>
@@ -270,8 +303,8 @@
         </label> 
         -->		
         <div id="erms" style="padding-bottom: 1em;"></div> 
-        <div id="actions" style="visibility: hidden;">            
-            <table id="tablaActions" align="center"  style="overflow: hidden;" >
+        <div id="actions" style="visibility: hidden;" >            
+            <table id="tablaActions" align="center"  style="overflow: hidden; background-color: rgba(255,255,255,0);" >
                 <tr>
                     <td>
                         <!-- share pop-->    
@@ -315,42 +348,9 @@
         </div>
     </div>             
 
-    <script>
-        function SelectText(element) {
-            var doc = document
-                    , text = doc.getElementById(element)
-                    , range, selection;
-
-            if (doc.body.createTextRange) {
-                range = document.body.createTextRange();
-                range.moveToElementText(text);
-                range.select();
-            } else if (window.getSelection) {
-                selection = window.getSelection();
-                range = document.createRange();
-                range.selectNodeContents(text);
-                selection.removeAllRanges();
-                selection.addRange(range);
-            }
-        }
-        var toggleActions = false;
-        function mouIn(e, obj) {
-            var x = e.clientX,
-                    y = e.clientY;
-
-            var act = document.getElementById('actions');
-            act.style.visibility = 'visible';
-            act.style.display = 'block';
-            setVisibleButtons(true);
-
-            //act.style.position= 'absolute';
-            //act.style.top= (document.body.scrollTop + y - 50 )+'px';
-            // act.style.left = x + 'px';
-            return true;
-        }
-        ;</script>
+   
     <!--<a href="javascript:void(0)" style="text-decoration: none; color:black;"><div id="copy" style="background: transparent; height: 1em; border: black; font-size: 1em;"  onclick="copyToTxtIn();">-->            
-    <p style="border: none;" onmouseover="mouIn(event, this);" onclick="mouIn(event, this);"
+    <p style="border: none;" onmouseover="mou(event, this, true);" onclick="mou(event, this, true);"
                              ondblclick="SelectText(this.id);"
                              readonly="" title="" id="result"></p>
     <!-- </div></a>  -->
