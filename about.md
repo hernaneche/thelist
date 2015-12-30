@@ -11,18 +11,18 @@
 
 A connection between *data* and *numbers*.
 
-Given any data, there is a number that encodes it, namely, different texts, images, sound, programs, files,.. can be encoded by numbers. That's how data is stored inside a computer. 
+Given any data there is a number that encodes it, namely, different texts, images, sounds, programs, files, can be encoded by numbers. That's how data is stored inside a computer. 
 
-On the other hand, given any possible *number* it's already encoding some data, although most of numbers combinations don't encode something known to us, the combinations are there, as empty lockers ready to be filled with meaning.
+On the other hand, any given number already encodes some data, although most of numbers combinations don't encode something known to us, the combinations are there, as empty lockers ready to be filled with meaning.
 
 Between ironic but seriously, this site aims an insight on our ability to distinguish, its scope, and about distinguishable things. 
  
 
 ###What's in a number? 
 
-There is a *number* &#8596; there is *something*
-
 Every natural numbers is different to any other, each one can be uniquely identified and encode any possible distinct data. We could say everything conceivable as being different is a sub set already encoded into in the list of all possible numbers.
+
+There is a *number* &#8596; there is *something*
 
 ###How can the list contain a picture before it's taken? who made it?
 
