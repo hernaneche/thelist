@@ -1,7 +1,7 @@
 .tooltip {
     color: #000000; outline: none;
     cursor: pointer; text-decoration: none;
-    position: relative;
+    position: relative;        
 }
 
 .tooltip span {
@@ -15,6 +15,10 @@
     font-family: Calibri, Tahoma, Geneva, sans-serif;
     left: 1em; top: 2em; z-index: 99;
     margin-left: -80px; width: 160px;
+    opacity:0;
+    -webkit-animation: fade 4s linear;
+    -moz-animation: fade 4s linear;
+    animation: fade 4s linear;
 }
 .r:hover span{
     margin-left: -220px;
@@ -26,6 +30,15 @@
 .tooltip:hover em {
     font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
     display: block; padding: 0.2em 0 0.6em 0;
+}
+
+@-webkit-keyframes fade {
+  0%,100% { opacity: 0; }
+  20% { opacity: 1; }
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  20% { opacity: 1 }
 }
 .classic { padding: 0.8em 1em; }
 .custom { padding: 1em 0em 0.2em 3em; }
