@@ -1,42 +1,45 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>technicalities</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-body{  font-family:'Merriweather', 'Georgia', serif; font-weight:300; font-size: 18px;  text-align: justify;margin: 0 auto; width: 45em;}
-pre{ font-size:1.1em;}
-h1,h2,h3,h4{ font-family: "Open Sans", sans-serif;color:#000; margin-top:1.6em; margin-bottom:.4em; }
-h3{font-size: 1.5em; }
-h4{font-size: 1.1em; }
-</style>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
 </head>
 <body>
 <p><link rel="shortcut icon" href="img/favicon.ico"/>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
-<link href="css/theliststyle.css" rel="stylesheet" type="text/css">   </p>
+<link href="css/theliststyle.css" rel="stylesheet" type="text/css"></p>
+
 <div style="position: fixed; top: 1em; right: 2em; text-align:right;">
+<link href="css/textstyle.css" rel="stylesheet" type="text/css">
 <a href="javascript:history.back();" class="linkMyPages" title="&#8469;">back</a></div>
-<h2>Technicalities</h2>
+
+
+<h2 id="Technicalities">Technicalities</h2>
+
 <hr />
-<h3>How is this list made?</h3>
-<p>There are infinitely many possible lists of numbers and mappings on them, some are faster, some slower, some are longer, shorter, popular ones, and so on, for different domains, beings and purposes. This one, this list was chosen to be <em>as continuous as possible</em>, with not forbidden numbers nor inputs, you input a number and there is something there, and vice versa.   </p>
-<p>It's made around UTF-8 coding, and Base64 for files, it allows input international encoding and some standard file formats.   For example if you input an '~' this will show the decimal value of the UTF-8 encoding for that character, i.e. 126. If you input '~~' then it &quot;could&quot; show 126 126, but it doesn't, because that would make the list to be <em>very</em> discontinuous, even decoding character by character won't be a <strong>prefix code</strong> because 126126 could be understood in many ways, for example: 12, 61, 26 or 1, 261, 26 and so on, it will not have the property of being uniquely decodable, unless we leave spaces or any special marker within codes 126[marker]126, but at doing that, we won't have a natural any more, let alone a continuous list; so instead, if you input '~~' you get the number 32382, that is a direct conversion from UTF-8 hexadecimal code. </p>
-<p><strong>UTF-8 encoding</strong> </p>
+
+<h3 id="How.is.this.list.made.">How is this list made?</h3>
+
+<p>There are infinitely many possible lists of numbers and mappings on them, some are faster, some slower, some are longer, shorter, popular ones, and so on, for different domains, beings and purposes. This one, this list was chosen to be <em>as continuous as possible</em>, with not forbidden numbers nor inputs, you input a number and there is something there, and vice versa.</p>
+
+<p>It&rsquo;s made around UTF-8 coding, and Base64 for files, it allows input international encoding and some standard file formats.   For example if you input an ~ this will show the decimal value of the UTF-8 encoding for that character, i.e. 126. If you input ~~ then it &ldquo;could&rdquo; show 126 126, but it doesn&rsquo;t, because that would make the list to be <em>very</em> discontinuous, even decoding character by character won&rsquo;t be a <strong>prefix code</strong> because 126126 could be understood in many ways, for example: 12, 61, 26 or 1, 261, 26 and so on, it will not have the property of being uniquely decodable, unless we leave spaces or any special marker within codes 126[marker]126, but at doing that, we won&rsquo;t have a natural any more, let alone a continuous list; so instead, if you input ~~ you get the number 32382, that is a direct conversion to decimal from hexadecimal code of UTF-8.</p>
+
+<p><strong>UTF-8 encoding</strong></p>
+
 <pre><code>8bits  0xxxxxxx  
 16bits 110yyyyy 10xxxxxx  
 24bits 1110zzzz 10yyyyyy 10xxxxxx  
 32bits 11110uuu 10uuzzzz 10yyyyyy 10xxxxxx      
 </code></pre>
 
-<p>As it's a prefix code, it's possible to concatenate codes of different lengths without mixing or confusing at decoding.</p>
-<p>UTF-8 is not a fixed bit length number to take as a base, so this is not as continuous as it wants to be, but as continuous as it can by now[any more continuous approach is welcome!]. In a way it's as taking the UTF-8 as the &quot;base&quot; of a <strong>mixed radix numeral system</strong> that is then converted to decimal and vice versa.</p>
+<p>As it&rsquo;s a prefix code, it&rsquo;s possible to concatenate codes of different lengths without mixing or confusing at decoding.</p>
+
+<p>UTF-8 is not a fixed bit length number to take as a base, so this is not as continuous as it wants to be, but as continuous as it can by now[any more continuous approach is welcome!]. In a way it&rsquo;s as taking the UTF-8 as the &ldquo;base&rdquo; of a <strong>mixed radix numeral system</strong> that is then converted to decimal and vice versa.</p>
+
 <ul>
-<li>First ensured chars to be in UTF-8 encoding (a prefix code! i.e no code start as any other, so there is no need for markers)  </li>
-<li>They are represented in individual hexadecimal numbers, and concatenated to form a whole big hexadecimal number.   </li>
+<li>First ensured chars to be in UTF-8 encoding (a prefix code! i.e no code start as any other, so there is no need for markers)</li>
+<li>They are represented in individual hexadecimal numbers, and concatenated to form a whole big hexadecimal number.</li>
 <li>The big hex number is converted into decimal <em>(this part is painfully slow)</em> [any faster approach is welcome!]</li>
 </ul>
 
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
