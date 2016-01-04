@@ -4,7 +4,7 @@
 <link href="css/textstyle.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" href="img/favicon.ico"/>        
 <link href="css/theliststyle.css" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Merriweather:400,300,300italic,700,700italic,400italic" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Istok+Web:400,400italic,700,700italic" rel="stylesheet" type="text/css"/>
 <meta name="viewport" content="width=device-width, user-scalable=no">   
 	
 ##What is The List? 
