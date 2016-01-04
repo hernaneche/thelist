@@ -1,6 +1,6 @@
 ##P vs NP problem##
 ###Improbable but possible###
-Trying to guess a meaningful number within a list of possibles in the hope of finding some useful information like music, science, images, movies, is terribly unlikely, is a so improbable bet that it's faster to put a whole universe to evolve rather than find a piece of art, or any useful information by doing an uninformed blind search or lucky guessing it, but strangely enough, it is not impossible. 
+Trying to guess a meaningful number within a list of possibles in the hope of finding some useful information like music, science, images, movies, is terribly unlikely, is a so improbable bet that it's faster to put a whole universe to evolve rather than find a piece of art or any useful information by doing an uninformed blind search or lucky guessing it, but strangely enough, it is not impossible. 
 
 If guessing right is so ridiculously improbable, **how do we actually get all these things after all?** 
 
