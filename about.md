@@ -11,11 +11,11 @@
 
 A connection between *data* and *numbers*.
 
-Given any data there is a number that encodes it, namely, different texts, images, sounds, programs, files, can be encoded by numbers. That's how data is stored inside a computer. 
+Given any *data* there is a *number* that encodes it, namely, different texts, images, sounds, programs, files, can be encoded by numbers. That's how data is stored inside a computer. 
 
-On the other hand, any given number already encodes some data, although most of numbers combinations don't encode something known to us, the combinations are there, as empty lockers ready to be filled with meaning.
+On the other hand, any given number already encodes some data, although most of numbers combinations don't encode something known to us, the combinations are there, like empty lockers ready to be filled with meaning.
 
-Between ironic but seriously, this site aims an insight on our ability to distinguish, its scope, and about distinguishable things. 
+This site aims an insight on our ability to distinguish, its scope, and about distinguishable things, ironic but seriously. 
  
 
 ###What's in a number? 
@@ -75,6 +75,12 @@ All these are in decimal
 
 
 ####&#x1f4d6; Words
+
+* [René Magritte, french](http://www.thelistofeverything.com/?id=423051850713666926660156482346607421190060976349929866949221&guess=false&sys=Dec)  
+
+* [René Magritte, english](http://www.thelistofeverything.com/?id=481883688215427557657972169703520220882164409714&guess=false&sys=Dec)  
+
+* [René Magritte, spanish](http://www.thelistofeverything.com/?id=101502743481419638702045311611755132588211143275119&guess=false&sys=Dec)  
 
 * [Science](http://www.thelistofeverything.com/?id=4981048397355270834&guess=false&sys=Dec)
 
