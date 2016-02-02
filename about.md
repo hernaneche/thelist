@@ -119,13 +119,17 @@ All these are in decimal
 A Leibniz's handwritten letter about binary numbers, from 1697 - Source: Wikipedia.
 
   
- [Philosophy](./morephilostuff.html)  
-  
- [Technical details on how is it made](./technicalities.html)
+####How is it made?
+Here are some [Technical details](./technicalities.html)
  
- [See the list itself](./nav.html)    
+####Can I *see* the list?
+Here is [the list itself](./nav.html)    
 
- [Contact us](./index.html?id=152575330250725041842718167543100159816576490762093)
+####Where to read more philosophy around this? (this is obviously not a faq)
+It can be read at [here](./morephilostuff.html)  
+
+####Can I contact you? (it's neither a faq)
+Yes, here you can [contact us](./index.html?id=152575330250725041842718167543100159816576490762093)
 
 
 <br>
