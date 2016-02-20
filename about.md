@@ -10,7 +10,7 @@
     
 ## What is *the list*? 
 
-You enter something to discover it was already there, an already assigned number, waiting there from the beginning of time.
+You enter something just to discover it was already there, it has a number assigned already, waiting from the beginning of time.
 
 There is a connection between data and numbers, any *data* can be encoded into a *number*, that's how data is stored inside computers, then the list of all *numbers* could also be the list of all *data*, namely any texts, images, sounds, files, and so on.
 
