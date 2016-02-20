@@ -10,11 +10,11 @@
     
 ## What is *the list*? 
 
-You enter something just to discover it was already there, it has a number assigned already, waiting from the beginning of time.
+You enter something just to discover it was already there, and it had a number assigned, since the beginning of time.
 
-There is a connection between data and numbers, any *data* can be encoded into a *number*, that's how data is stored inside computers, then the list of all *numbers* could also be the list of all *data*, namely any texts, images, sounds, files, and so on.
+There is a connection between data and numbers, any *data* can be encoded into a *number*, that's how data is stored inside computers. The list of all *numbers* could also be the list of all *data*, namely any texts, images, sounds, files, and so on.
 
-On the other hand, any *number* encodes some particular *data*, and although most of numbers combinations don't encode something known, those combinations are still there, like empty lockers ready to be filled with meaning.
+On the other hand, any *number* encodes some particular *data*, and although most combinations of numbers don't encode something known, those combinations are still there, like empty lockers ready to be filled with meaning.
 
 This site aims an insight on our ability to distinguish and its scope. 
  
