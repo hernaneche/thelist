@@ -12,21 +12,19 @@
 
 You enter something just to discover it was already there, it had a number assigned, since the beginning of time.
 
-There is a connection between data and numbers, any *data* can be encoded into a *number*.
+There is a connection between data and numbers, it is, any *data* can be encoded into a *number*, that's how things are stored inside computers, namely any texts, images, sounds, files, and so on, also any *number* already encodes some particular possible *data*, the list of all *numbers* could also be the list of all *data*, the list of anything.
 
+Although most combinations of numbers don't encode something known, combinations are still there encoding things, like empty lockers ready to be filled with meaning.
 
-Well that's how things are stored inside computers namely any texts, images, sounds, files, and so on, as any *number* already encodes some particular *data*,  the list of all *numbers* could also be the list of all *data*, it has anything.
-
-Although most combinations of numbers don't encode something known, those combinations are still there, like empty lockers ready to be filled with meaning.
-
-This site aims an insight on our ability to distinguish and its scope.
+How much are we able to distinguish?
  
 
-###What's in a number? 
+###What's in a number
+> «..that which we call a rose. By any other name would smell as sweet» -W. Shakespeare
 
-The essence of every natural number is: to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable is *already* encoded in some sub set of numbers inside the list of all possible numbers. 
+The essence of every natural number is to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable is *already* encoded in some sub set of numbers inside the list of all possible numbers. 
 
-There is a *number* &#8596; there is *something*!
+There is a *number* &#8596; there is *something*
 
 ###How can the list contain a picture before it's taken? who made it?
 
