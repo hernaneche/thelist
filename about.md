@@ -20,11 +20,12 @@ How much are we able to distinguish?
  
 
 ###What's in a number
-> «..that which we call a rose. By any other name would smell as sweet» -W. Shakespeare
 
 The essence of every natural number is to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable is *already* encoded in some sub set of numbers inside the list of all possible numbers. 
 
 There is a *number* &#8596; there is *something*
+
+> «What's in a name? that which we call a rose. By any other name would smell as sweet» -W. Shakespeare
 
 ###How can the list contain a picture before it's taken? who made it?
 
