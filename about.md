@@ -25,7 +25,7 @@ The essence of every natural number is to be different to any other, to be uniqu
 
 There is a *number* &#8596; there is *something*
 
-> «What's in a name? that which we call a rose. By any other name would smell as sweet» -W. Shakespeare
+«What's in a name? that which we call a rose. By any other name would smell as sweet» - Shakespeare
 
 ###How can the list contain a picture before it's taken? who made it?
 
