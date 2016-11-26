@@ -28,11 +28,12 @@ Where there is a *number* &#8596; there is *something*
 
 ####*«What's in a name? that which we call a rose. By any other name would smell as sweet» - Shakespeare*
 
+
 ###How can the list contain a picture before it's taken? who made it!?
 
 It has been forever, in the land of possibilities, within you without you.... &#x950;
 
-Then *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, with no creator? The answer is that authors meet those numbers faster than any *method*, or that's how authors can be defined, even though they themselves could be a domino of a larger process. 
+Then *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, without design? The answer is that most of what can be found by counting is meaningless, most numbers doesn't fit with anything, and the few who do, are very hard to find; so authors can meet those numbers faster than any possible **method**, or that's how authors can be defined, even though they themselves could be a domino of a larger process. 
 
 And having said that..
 
