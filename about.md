@@ -10,24 +10,25 @@
     
 ## What is *the list*? 
 
-You enter something just to discover it was already there, it had a number assigned, since the beginning of time.
 
-There is a connection between data and numbers, it is, any *data* can be encoded into a *number*, that's how things are stored inside computers, namely any texts, images, sounds, files, and so on, also any *number* already encodes some particular possible *data*, the list of all *numbers* could also be the list of all *data*, the list of anything.
+There is a connection between data and numbers, it is, any *data* can be encoded into a *number*, in fact that's how things are stored inside computers; namely any texts, images, sounds, files, and so on. On the other hand any *number* already encodes some particular possible *data*; the list of all *numbers* is also the list of all *data*, the list of anything.
 
-Although most combinations of numbers don't encode something known, combinations are still there encoding things, like empty lockers ready to be filled with meaning.
+Although most combinations of numbers don't encode something known, combinations are still there, encoding things, like empty lockers ready to be filled with meaning.
+
+You enter something just to discover it was already there, it had a number assigned since the beginning of time.
 
 How much are we able to distinguish?
  
 
 ###What's in a number
 
-The essence of every natural number is to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable is *already* encoded in some sub set of numbers inside the list of all possible numbers. 
+The essence of every natural number is to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable difference is *already* encoded in a number, all data we know is some sub set of numbers inside the list of all possible numbers. 
 
-There is a *number* &#8596; there is *something*
+Where there is a *number* &#8596; there is *something*
 
-«What's in a name? that which we call a rose. By any other name would smell as sweet» - Shakespeare
+#####*«What's in a name? that which we call a rose. By any other name would smell as sweet» - Shakespeare*
 
-###How can the list contain a picture before it's taken? who made it?
+###How can the list contain a picture before it's taken? who made it!?
 
 It has been forever, in the land of possibilities, within you without you.... &#x950;
 
