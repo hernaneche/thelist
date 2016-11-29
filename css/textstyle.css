@@ -7,7 +7,7 @@ body{
     background:linear-gradient(
       rgba(255, 255, 255, 0.90), 
       rgba(255, 255, 255, 0.90))
-    ,url("../img/background2.jpg") center center no-repeat; 
+    ,url("../img/background.jpg") center center no-repeat; 
     background-attachment:fixed;  
     background-size: cover;
 }
