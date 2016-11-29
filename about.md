@@ -119,11 +119,7 @@ All these are in *decimal*
  
 
 ###FAQ  
-
-  
-####What's the background picture? 
-A Leibniz's handwritten letter about binary numbers, from 1697 - Source: Wikipedia.
-  
+   
 ####How is it made?
 Here are some [technical details](./technicalities.html)
  
