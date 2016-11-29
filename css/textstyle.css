@@ -5,9 +5,9 @@ h3{font-size: 1.5em; }
 h4{font-size: 1.1em; }
 body{ 
     background:linear-gradient(
-      rgba(255, 255, 255, 0.95), 
-      rgba(255, 255, 255, 0.95))
-    ,url("../img/background.jpg") center center no-repeat; 
+      rgba(255, 255, 255, 0.90), 
+      rgba(255, 255, 255, 0.90))
+    ,url("../img/background2.jpg") center center no-repeat; 
     background-attachment:fixed;  
     background-size: cover;
 }
