@@ -7,7 +7,7 @@ body{
     background:linear-gradient(
       rgba(255, 255, 255, 0.95), 
       rgba(255, 255, 255, 0.95))
-    ,url("../img/NASA-HS201427a-HubbleUltraDeepField2014-20140603.jpg") center center no-repeat; 
+    ,url("../img/background.jpg") center center no-repeat; 
     background-attachment:fixed;  
     background-size: cover;
 }
