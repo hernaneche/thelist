@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no">   
 
     
-## What is *the list*? 
+## What is the list? 
 
 
 There is a connection between data and numbers, it is, any *data* can be encoded into a *number*, in fact that's how things are stored inside computers; namely any texts, images, sounds, files, and so on. On the other hand any *number* already encodes some particular possible *data*; the list of all *numbers* is also the list of all *data*, the list of anything.
