@@ -46,7 +46,7 @@
                 return !isVisibleMustClose;
 
             }
-
+	    var ROOT_HOST='hernaneche.github.io/thelist';
             function clickShare() {
                 var linkToCopy = document.getElementById("linkToCopy");
                 var sharePop = document.getElementById("sharePop");
@@ -59,12 +59,12 @@
                 var dl = document.getElementById('withDl').checked;
                 if (document.getElementById('chooseButton').checked) {
                     /*modo data2number*/
-                    url = "http://www.thelistofeverything.com/?id=" + result.innerHTML; /*get number from result*/
+                    url = "https://"+ROOT_HOST+"/?id=" + result.innerHTML; /*get number from result*/
                     guess = guess || fromfile; /*guess if came from file*/
                     document.getElementById('withGuess').checked = guess;
                 } else {
                     /*modo number2data*/
-                    url = "http://www.thelistofeverything.com/?id=" + inp.value; /*get number from input*/
+                    url = "https://"+ROOT_HOST+"/?id=" + inp.value; /*get number from input*/
                     guess = guess || document.getElementById("parseEnable").checked; /*guess if user was guessing*/
                     document.getElementById('withGuess').checked = guess;
                 }
