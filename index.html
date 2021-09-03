@@ -250,13 +250,13 @@
         <div id="topdiv" style="top: 0px;">
             <div class="tooltip r" style="float:right; right: .2em; ">
                 <a href="./about.html" class="linkMyPages" >&nbsp;&nbsp;i&nbsp;&nbsp;</a>
-                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><b>What is the list ?</b></span></a>
+                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><b>About</b></span></a>
             </div>
             <div class="tooltip" style="float:left; left: .2em; text-align: left; " >                
                 <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" 
                        onclick="clickNumberSystem();"                                
                        value="dec">
-                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><b>Numeral system base</b></span></a>
+                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><b>Base</b></span></a>
             </div>
         </div>
 
@@ -270,10 +270,10 @@
                 -->
                 <table style="margin:0pt 0pt;">
                     <tr>
-                    <div>
+                    <div style=" display: flex;justify-content: center;">
                         <textarea class="text" style="border-style: solid; padding: .2em;" id="txtIn" autofocus="autofocus" name="Search" title="Search"></textarea>                                            
                     </div>                 
-                    <div id="graphswitch" class="onoffswitch" style="margin-bottom: 1em; margin-top:2px; font-size: 4em;" title="it from bit"> 
+                    <div id="graphswitch" class="onoffswitch" style="font-size: 6em;" title="it from bit"> 
 
                         <input type="checkbox" name="onoffswitch" class="psiphi"
                                onclick="flipDuendeIfNeeded();/*it from bit switch*/
@@ -357,7 +357,7 @@
                              readonly="" title="" id="result"></p>
     <!-- </div></a>  -->
     <script type="application/javascript" src="js/firethelist.min.js">
-        var txtVar = document.getElementById("txtIn");                    
+        //var txtVar = document.getElementById("txtIn");                    
         //txtVar.onkeyup = fireList;                    
         document.getElementById("saveButton").setAttribute("tabIndex", "-1");
         document.getElementById("formulario").setAttribute("tabIndex", "-1");
