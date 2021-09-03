@@ -23,7 +23,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="shortcut icon" href="img/favicon.ico"/>        
         <link href="css/theliststyle.css" rel="stylesheet" type="text/css">       
-        <link href="css/tooltip.css" rel="stylesheet" type="text/css">       
+        <!--link href="css/tooltip.css" rel="stylesheet" type="text/css"-->       
         <link rel="stylesheet" type="text/css" href="css/sprite-duendes.css">         
         <link rel="stylesheet" type="text/css" href="css/togglestyle.css">       
         <!--<link rel="prefetch" href="../img/sprite_duende_uno.png"/>
@@ -248,15 +248,13 @@
         </div>
 
         <div id="topdiv" style="top: 0px;">
-            <div class="tooltip r" style="float:right; right: .2em; ">
-                <a href="./about.html" class="linkMyPages" >&nbsp;&nbsp;i&nbsp;&nbsp;</a>
-                <a class="tooltip r" href="#"><span class="custom help"><img src="img/info.png" alt="Error" height="48" width="48" /><b>About</b></span></a>
+            <div title="About" style="float:right; right: .2em; ">
+                <a href="./about.html" class="linkMyPages" >&nbsp;&nbsp;i&nbsp;&nbsp;</a>                
             </div>
-            <div class="tooltip" style="float:left; left: .2em; text-align: left; " >                
+            <div title="Base" style="float:left; left: .2em; text-align: left; " >                
                 <input type="button" class="linkMyPages" style="border:none;" id="numbersystem" 
                        onclick="clickNumberSystem();"                                
-                       value="dec">
-                <a class="tooltip" href="#"><span class="custom help"><img src="img/bagua.png" alt="Error" height="48" width="48" /><b>Base</b></span></a>
+                       value="dec">                
             </div>
         </div>
 
