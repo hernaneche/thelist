@@ -1,7 +1,7 @@
 .tooltip {
-    color: #000000; outline: none;
+    color: #333333; outline: none;
     cursor: pointer; text-decoration: none;
-    position: relative;        
+    position: relative;            
 }
 
 .tooltip span {
@@ -11,40 +11,40 @@
 .tooltip:hover span {
     cursor: pointer;
     border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-    font-family: Calibri, Tahoma, Geneva, sans-serif;
-    left: 1em; top: 0em; z-index: 99;
-    margin-left: 0px; width: 160px;
-    opacity:0;
-    -webkit-animation: fade 3s linear;
-    -moz-animation: fade 3s linear;
-    animation: fade 3s linear;
+   /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    */font-family: Calibri, Tahoma, Geneva, sans-serif;
+    left: 2em; top: 1em; z-index: 99;
+    margin-left: 0px; width: 5em;
+    /*opacity:0;*/
+    -webkit-animation: fade 1s linear;
+    -moz-animation: fade 1s linear;
+    animation: fade 1s linear;
 }
 .r:hover span{
-    margin-left: -150px;
+    margin-left: -10em;
 }
 .tooltip:hover img {
-    border: 0; margin: -10px 0 0 -55px;
+    border: 0; margin: -1em 0 0 -3.5em;
     float: left;
 }
 .tooltip:hover em {
-    font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+    font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 2em; font-weight: bold;
     display: block; padding: 0.2em 0 0.6em 0;
 }
 
 @-webkit-keyframes fade {
-  0%,100% { opacity: 0; }
-  20% { opacity: 1; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 @keyframes fade {
-  0%,100% { opacity: 0 }
-  20% { opacity: 1 }
+ 0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .classic { padding: 0.8em 1em; }
 .custom { padding: 1em 0em 0.2em 3em; }
 
 .classic {background: #FFFFAA; border: 1px solid #FFAD33; }
 .critical { background: #FFCCAA; border: 1px solid #FF3334; }
-.help { background: #e9e9e9; border: 0px }
+.help { background: transparent;border: 0px;}
 .info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
 .warning { background: #FFFFAA; border: 1px solid #FFAD33; }
