@@ -95,7 +95,7 @@ textarea {
 /*mensajes de error*/
 
 .msg{
-    font-size:30px;            
+    font-size:35px;            
     font-style: italic;
     display:inline;
 }
@@ -104,7 +104,7 @@ p.sys{
     color:green;                    
 }           
 p.err{    
-    color:lightcoral;                        
+    color:#f91e00;
 }
 p.text{                                   
     font-size:48px;                
