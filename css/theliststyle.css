@@ -104,7 +104,7 @@ p.sys{
     color:green;                    
 }           
 p.err{    
-    color:#f91e00;
+    color:red;
 }
 p.text{                                   
     font-size:48px;                
