@@ -177,8 +177,7 @@
             fireFromURL();
             document.getElementById('loading-overlay').style.opacity = 1;
             setTimeout(preloadIMG, 100);
-          ">                    
-
+          ">                            
         <div id="loading-overlay" style="
              position: absolute;
              z-index: 1000;
@@ -191,19 +190,22 @@
              font-family: arial;
              font-weight: bold;
              font-style: italic;
-             font-size: 5em;               
+             font-size: 4em;               
              padding-top: 10%;
              text-align: center;            
              transition: opacity 0.10s ease-out;
-             opacity:0;
+             opacity:1;
              " onclick="this.style.display='none';">Loading everything...
             <script>
                   //function sleepFor( sleepDuration ){
                   //  var now = new Date().getTime();
                   //  while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
                   //  }
+                let urlPic;
+                var onceLoad=false;
 
-                function preloadIMG() {
+
+                async function preloadIMG() {
                     //sleepFor(20000);
                     var img1 = new Image();
                     var img2 = new Image();
@@ -212,8 +214,41 @@
                     img1.src = "./img/sprite_duende_uno.png";
                     img2.src = "./img/sprite_duende_dos.png";
                     img3.src = "./img/sprite_duende_tres.png";
-                    document.getElementById('loading-overlay').style.opacity = 0;
-                    setTimeout(function(){ document.getElementById('loading-overlay').style.display = 'none';}, 100);
+
+
+                     var img = new Image();
+                      if(!onceLoad){     
+                        urlPic="../img/background.jpg";    
+                      }
+                      var error=false;
+                      try{
+                        if(!onceLoad){     
+                          var response = await fetch("https://api.unsplash.com/photos/random?client_id=EYqyBXwouHrW8sF752zBixhG866dThdUH8z8-3s3ZK4"); //obtiene random
+                          var res=await response.json();        
+                          urlPic=res.urls.regular; //url obtenida  
+                          onceLoad=true;
+                        }        
+                      }catch(e)
+                      {
+                         onceLoad=false;
+                         error=true;  
+                      }
+                    img.onload = function() {  
+                        css('body', 'background', 'url("'+urlPic+'") center center no-repeat');                        
+                        css('body', 'background-attachment', 'fixed')
+                        css('body', 'background-size', 'cover')
+                        //document.getElementById('loading-overlay').style.opacity = 0;
+                        //setTimeout(function(){ 
+                            document.getElementById('loading-overlay').style.display = 'none';
+                            //}, 100);
+                    }
+                    if(error) {
+                        img.onload();
+                      }else{
+                        img.src = urlPic;
+                        if (img.complete) img.onload();  
+                      }
+                    
                 }
                 var rot = 0;
                 
