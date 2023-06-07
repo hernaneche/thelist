@@ -11,9 +11,9 @@
 ## What is the list? 
 
 
-There is a connection between data and numbers, it is, any *data* can be encoded into a *number*, in fact that's how things are stored inside computers; namely any texts, images, sounds, files, and so on. On the other hand any *number* already encodes some particular possible *data*; the list of all *numbers* is also the list of all *data*, the list of anything.
+There is a connection between data and numbers. Any *data* can be encoded into a *number*, in fact that's how things are stored inside computers; namely any texts, images, sounds, files, and so on. On the other hand any *number* already encodes some particular possible *data*; the list of all *numbers* is also the list of all *data*, the list of anything.
 
-Although most combinations of numbers don't encode something known, combinations are still there, encoding things, like empty lockers ready to be filled with meaning.
+Although most combinations of numbers don't encode something known, combinations are still there, encoding things like empty lockers ready to be filled with meaning.
 
 You enter something just to discover it was already there, it had a number assigned since the beginning of time.
 
@@ -22,18 +22,20 @@ How much are we able to distinguish?
 
 ###What's in a number
 
-The essence of every natural number is to be different to any other, to be uniquely identified, that's the key, so each one encodes any single possible different data; everything conceivable difference is *already* encoded in a number, all data we know is some sub set of numbers inside the list of all possible numbers. 
+The essence of every natural number is to be different from any other, to be uniquely identified. That's the key. Each number encodes any single possible different data. Every conceivable difference is *already* encoded in a number. All the data we know is a subset of numbers within the list of all possible numbers.
+
 
 Where there is a *number* &#8596; there is *something*
 
 ####*«What's in a name? that which we call a rose. By any other name would smell as sweet» - Shakespeare*
 
 
-###How can the list contain a picture before it's taken? who made it!?
+###How can the list contain a picture before it's taken? Who made it!?
 
-It has been forever, in the land of possibilities, within you without you.... &#x950;
+It has been forever in the land of possibilities, within you without you.... &#x950;
 
-Then *what’s an author?* how can the concept of an author even exist, given that anything possible can be found just by counting, without design? The answer is that most of what can be found by counting is meaningless, most numbers doesn't fit with anything, and the few who do, are very hard to find; so authors can meet those numbers faster than any possible **method**, or that's how authors can be defined, even though they themselves could be a domino of a larger process. 
+Then what's an *author*? How can the concept of an author even exist if anything possible can be found just by counting, without design? The answer is that most of what can be found by counting is meaningless. Most numbers don't correspond to anything, and the few that do are very hard to find. Authors can discover those numbers faster than any possible **method**. That's how authors can be defined, even though they themselves could be a small part of a larger process.
+ 
 
 And having said that..
 
@@ -46,7 +48,6 @@ And having said that..
   
 ©[5417678247864839871921629457519](./index.html?id=5417678247864839871921629457519 "5417678247864839871921629457519")  
 ©[89564249298695624698072835829054665327](./index.html?id=89564249298695624698072835829054665327)  
-©[20824135733621191033771673935](./index.html?id=20824135733621191033771673935 "20824135733621191033771673935")
 
 
 ---
